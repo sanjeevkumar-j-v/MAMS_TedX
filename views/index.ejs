@@ -1,0 +1,746 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zxx">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Keywords and Tags -->
+    <meta name="description" content="TEDxMITSG, x = independently organised TED event. Moving The Margins. 25 January, at MITS,Gwalior."/>
+    <meta name="keywords" content="TEDx, MITSG, MITS Gwalior, Gwalior,Madhav Institute of Technology and Science , event, talks"/>
+    <meta name="robots" content="noindex" />
+    <!-- Social media tags -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="TEDxMAMS"/>
+    <meta property="og:description" content="Moving The Margins ,25 January, at MITS,Gwalior."/>
+    <meta property="og:image" content="https://tedxmitsg.com/assets/light-social.png"/>
+    <meta property="og:url" content="https://tedxmitsg.com"/>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@TMitsg"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152687064-2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152687064-2');
+    </script>
+   
+
+    <title>TEDxMAMS</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/flaticon.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/loader.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/nice-select.css" rel="stylesheet" />
+    <link href="css/nave.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/price_rangs.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/SlickNave.css" rel="stylesheet" />
+    <link href="css/MainStyle.css" rel="stylesheet" />
+    <link href="css/Style1.css" rel="stylesheet" />
+    <link href="css/Stylecard.css" rel="stylesheet" />
+    <link href="css/themify-icons.css" rel="stylesheet" />
+    <link href="css/Style3.css" rel="stylesheet" />
+    
+  
+    <a href="css/style.map">css/style.map</a>
+</head>
+<body>
+    <div class="se-pre-con">
+        <div class="drawing" id="loading">
+            <div class="loading-dot"></div>
+        </div>
+        
+    </div>
+    <script>
+    AOS.init();
+    </script>
+
+   <div id="main">
+        <div id="particles-js"></div>
+
+
+       <%- include('_header') %>
+
+
+          <div class="container-fluid" style="padding:50px;">
+            <div class="row">
+                <div class="main-body text-center pt-3">
+                    <div class="maintitle">
+                        <img src="assets/logo.png"/>
+                    </div>
+                    <div class="dateandplace">
+                        <h1 class="fs-32 text-white  fw-500">14th <span class="text-base-color">November</span> 2020 | 11:00 AM</h1>
+                        <h1 class="fs-42 text-white  fw-600">Maa Anandmayee <span class="text-base-color"> Memorial</span> School, Raiwala</h1>
+                    </div>
+                     <div class="sponsorsouslinkbtn" style="padding-bottom:50px;" align="center">
+             <a href="#" class="sponsorsouslink">Register Here</a>
+           </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div style=" background-color:#e62b1e; height:100px;">
+    <h1  style="color:white; text-align: center; font-family:Rubik sans-serif;">CountDown</h1>
+    <!-- Display the countdown timer in an element -->
+<p class="demobtn" id="demo" style="color:white; text-align: center;    font-size: 50px;    margin-top: 0px;"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 14, 2020 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+    </div>
+
+
+     <div id="section2">
+        <h1 class="text-black section2title ff-mont pt-2 fs-40 fw-600">IN THE<span class="text-base-color"> JOURNEY</span></h1>
+        <div class="about-us mt-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-fluid">
+                <div class="about-main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div style="position:relative;height:0;padding-bottom:56.25%">
+                               <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe width="1263" height="480" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-ted">
+                                <p class="text-black fs-14 fw-400">
+                                    Some lives become stories that are told and retold with a new flair every time. In moving the margins, we look at lives that have not just thought, out-of-the- box, but have redefined the very process of thinking.
+                                    We are exhibiting Moving the Margins through ground breaking contributions of those illustrious personalities that have changed the very fabric of contemporary society and posits to change the shape of human civilization.<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-tedx">
+                                <h1 class="text-black fs-20 fw-500">About <span class="cl-red fw-800 font-family-alt">TED</span></h1>
+                                <p class="text-black fs-14 fw-400">TED-Technology, Entertainment, Design is a non-profit media organization which posts videos of powerful talks online, for free distribution, under the slogan ideas worth spreading, ideas which are known to change perspectives and provide food for thought.TED was founded in February 1984 as a conference, which has been held annually since 1990. TED's early emphasis was technology and design, but it has since broadened its focus to include talks on many scientific, cultural, and academic topics.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-tedx">
+                                <h1 class="text-black fs-20 fw-500">About <span class="cl-red fw-800 font-family-alt">TEDx</span></h1>
+                                <p class="text-black fs-14 fw-400">TEDx is a grassroots initiative, created in the spirit of TEDs overall mission to research and discover ideas worth spreading TEDx brings the spirit of TED to local communities around the globe via rules and tools.<br> TEDx events are organized by passionate individuals who seek to uncover new ideas and the latest research in their local areas and spark conversations in their communities. TEDx events include live speakers and recorded TED Talks, and are organized independently under a free license granted by TED.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-tedxmitsg">
+                                <h1 class="text-black fs-20 fw-500">About <span class="cl-red fw-800 font-family-alt">TEDxMAMS</span></h1>
+                                <p class="text-black fs-14 fw-400">
+                                    At TEDxMAMS, we are aspiring to reach for the sky, grab a star and bring Enlightenment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div id="speakers" style="padding:150px;"><hr/>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="tedxspeakers-title text-center m-3">
+                    <h1 class="text-black section2title p-3 fs-40 fw-600 ff-mont" data-aos="fade-up"><span class="text-base-color ">SPEAKERS</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="tedxspeaker">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker1.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Dr ABC</h1>
+                                <p class="fs-18 fw-500">AAA<br/>UP, India</p>
+                                <a href="drmrajgopl.html"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF DR ABC</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker2.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Mr. ABC</h1>
+                                <p class="fs-18 fw-500">XYZ<br/>Odissa, India</p>
+                                <a href="ramliibrahim.html"><p class="fs-14 text-base-color">CLICK HERE </p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker3.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Mr. Mishra</h1>
+                                <p class="fs-18 fw-500">ABC,<br/> Hero</p>
+                                <a href="piyushmishra.html"><p class="fs-14 text-base-color">CLICK HERE</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker4.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Mr. John</h1>
+                                <p class="fs-18 fw-500">
+                                    XAB
+                                    <br/>Nepal
+                                </p>
+                                <a href="vijaykalra.html"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Mr.JOHN</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-3 offset-md-2">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker5.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Mrs. Cha</h1>
+                                <p class="fs-18 fw-500">Founder <br/>New</p>
+                                <a href="malinigowrishankar.html"><p class="fs-14 text-base-color">CLICK HERE FOR BRIEF PROFILE OF Mrs. Cha</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker6.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">ABC</h1>
+                                <p class="fs-18 fw-500">Animation</p>
+                                <br/>
+                                <a href="ishanshukla.html"><p class="fs-14 text-base-color">CLICK HERE </p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="speakers-box" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="speakers-imgbox">
+                                <img src="assets/speaker7.jpg"/>
+                            </div>
+                            <div class="speakers-txtbox">
+                                <h1 class="fs-25 fw-900">Mr. XYZ</h1>
+                                <p class="fs-18 fw-500">Senior<br>Skills </p>
+                                <a href="utsavmishra.html"><p class="fs-14 text-base-color">CLICK HERE</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="pastevents pt-3" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="text-white fs-40 fw-900"><span class="cl-red fw-800 font-family-alt">TEDx</span>MAMS</h1>
+                    <h2 class="text-white fs-25 fw-900">Youth,Innovation<span class="cl-red fw-800 font-family-alt">& Integration</span></h2>
+                    <div class="pasteventtext">
+                        <p class="text-justify text-white fs-16 fw-500">We live in a world where ideas float even in thin air and with the fast emerging wireless and infrared technologies- they literally do.TED Talks are powerful and capable of influencing masses. We know that necessity is the mother of all inventions, but ideas are the father and TED talks create an environment of looking into our minds producing ideas that can benefit us, our life style and the lives of those around us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row text-center pt-1">
+                <div class="carouseltedx pt-1" data-aos="fade-down" data-aos-duration="1000">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7No0iVRoPj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YcgchC1eew4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+
+
+    <div id="ourteam">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="tedxspeakers-title text-center">
+                    <h1 class="text-black section2title  fs-40 fw-600 ff-mont" data-aos="fade-up"><span class="text-base-color ">OUR TEAM</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="ourteamlist">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="ourteamtitle w-100 text-center m-3">
+                        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">ORGANISER</div><hr />
+
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="card">
+  <img src="assets/speaker3.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+   <div class="row" style="padding-left:120px; padding-bottom:5px;">
+                          <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png"/></a>
+                            <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png"/></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png"/></a></div>
+  <p><button class="button">Contact</button></p>
+</div>
+                 <div class="card">
+  <img src="assets/speaker1.jpg"  alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+    <div class="row" style="padding-left:120px; padding-bottom:5px;">
+                          <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png"/></a>
+                            <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png"/></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png"/></a></div>
+  <p><button class="button">Contact</button></p>
+</div>
+                  <div class="card">
+  <img src="assets/speaker2.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+   <div class="row" style="padding-left:120px; padding-bottom:5px;">
+                          <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png"/></a>
+                            <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png"/></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png"/></a></div>
+  <p><button class="button">Contact</button></p>
+</div>
+                      <div class="card">
+  <img src="assets/speaker5.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+                         
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+                          <div class="row" style="padding-left:120px; padding-bottom:5px;">
+                          <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png"/></a>
+                            <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png"/></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png"/></a></div>
+  
+  <p><button class="button">Contact</button></p>
+</div>
+                    </div>
+                   
+                 
+                </div></div>
+                <div class="row">
+                    <div class="ourteamtitle w-100 text-center m-3">
+                        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">OPERATOR</div><hr />
+                    </div>
+                </div>
+                <div class="orgnisers">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker1.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">Name</h1>
+                                    <p class="fs-14 fw-500">Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker2.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">Name</h1>
+                                    <p class="fs-14 fw-500">Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="ourteamtitle w-100 text-center m-3">
+                        <div class="text-black fw-500 fs-20 font-family-alt" data-aos="fade-up">CORE TEAM</div><hr/>
+                    </div>
+                </div>
+                <div class="coreteam">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker3.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">STU</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker4.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">PQR</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker5.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">MNO</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker6.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">JKL</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker7.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">GHI</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker3.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">DEF</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker2.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">ABC</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker1.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">VWX</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker4.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">STU</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="teamprofile" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="teamprofileimg">
+                                    <img src="assets/speaker5.jpg"/>
+                                </div>
+                                <div class="teamprofiletxt">
+                                    <h1 class="fs-16 fw-900">ABC</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Section - Social start -->
+    <section id="social" class="bg-gray-light-2 pull-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2" style="color:black;">
+                        Connect with us
+                    </h2>
+                    <hr /><a href="#" class="fa fa-facebook"></a> 
+                    <span class="bg-base-color margin-4 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
+                </div>
+            </div>
+            <!-- //.row -->
+            <br/><br/>
+           
+            <div class="row">
+                
+                <!-- Social Box -->
+                <div class="features-box col-sm-6 col-md-4">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative bg-white">
+                        <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                            <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
+                                 <div class="socialmediaico" id="fot" style="padding-left:300px; height:17px; width:17px;">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png"/></a>
+                           
+                        </div>
+                                <span class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center">
+                                    Facebook             
+                                </span>
+                                <!-- Facebook plugin -->
+                                <div id="fb-root"></div>
+                                <script>
+(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=203606196348015";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-page" data-href="https://www.facebook.com/MAMSraiwala/ " data-tabs="timeline"
+                                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
+                                     data-show-facepile="false">
+                                    <blockquote cite="https://www.facebook.com/MAMSraiwala/ " class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/MAMSraiwala/ ">TEDx</a>
+                                    </blockquote>
+                                </div>
+                                <!-- //Facebook plugin -->
+                            </div>
+                            <!-- //.display-table-cell -->
+                        </div>
+                        <!-- //.display-table -->
+                    </div>
+                    <!-- //.border -->
+                </div>
+                <!-- //Social Box -->
+                <!-- Social Box -->
+                <div class="features-box col-sm-6 col-md-4 xs-margin-4 xs-no-margin-rl xs-no-margin-bottom">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative bg-white">
+                        <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                            <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
+                                 <div class="socialmediaico" id="fot" style="padding-left:300px; height:17px; width:17px;">
+                           
+                            <a href="https://linkedin.com/" target="_blank"><img src="assets/linkedin.png"/></a>
+                           
+                        </div>
+                                <span class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center">
+                                    LinkedIn
+                                </span>
+                                <!-- Twitter timeline -->
+                               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6709400446450106368"  height="500" width="350" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                <!-- //Twitter timeline -->
+                            </div>
+                            <!-- //.display-table-cell -->
+                        </div>
+                        <!-- //.display-table -->
+                    </div>
+                    <!-- //.border -->
+                </div>
+                <!-- //Social Box -->
+                
+                <!-- Social Box -->
+                <div class="features-box col-sm-6 col-md-4 sm-margin-4 sm-no-margin-rl sm-no-margin-bottom">
+                    <div class="border border-gray-light border-round box-shadow-yes position-relative bg-white">
+                        <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                            <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle"> 
+                                 <div class="socialmediaico" id="fot" style="padding-left:300px; height:17px; width:17px;">
+                           
+                            <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.png"/></a>
+                           
+                        </div>
+                                <span class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center" style="padding-bottom:25px;">
+                                    Instagram            
+                                </span>
+                                <!-- Instagram posts -->
+                                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                                <div style="height: 500px; overflow-y: auto">
+                                   <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CFeeZjYDlwM/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CFeeZjYDlwM/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/CFeeZjYDlwM/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Shattering yet another glass ceiling: A proud moment for the #women of @indianairforce . Flight Lt Shivangi Singh is set to be the first female fighter pilot to be a part of the IAF&#39;s #Rafale 17 Squadron &#39;Golden Arrows&#39; in Ambala. Flight Lieutenant Shivangi Singh was commissioned into the Indian Air Force (IAF) in 2017. This is a giant leap for #genderequity in the armed forces. Jai Hind 🇮🇳 @ylacofficial @equalityclubs #RafaleinIndia #IAF #womenempowerment #smashinequality #shivangisingh #leadership #courage #womencrushwednesday</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/mams_raiwala/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Maa Anandmayee Memorial School</a> (@mams_raiwala) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-09-23T10:45:17+00:00">Sep 23, 2020 at 3:45am PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>               </div>
+                                <!-- //Instagram posts -->
+                            </div>
+                            <!-- //.display-table-cell -->
+                        </div>
+                        <!-- //.display-table -->
+                    </div>
+                    <!-- //.border -->
+                </div>
+                <!-- //Social Box -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //Section - Social end-->
+    
+
+      <%- include('_footer') %>
+
+
+
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('.navbar-nav>li>a').on('click', function(){
+    // $('.navbar-collapse').collapse('hide');
+  });
+
+</script>
+<script type="text/javascript">
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
+<script language="javascript" type="text/javascript">
+  $(window).on('load', function(){ $(".se-pre-con").fadeOut("slow");;});
+</script>
+
+<script src="js/particles.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/countdown1.js"></script>
+
+
+</html>

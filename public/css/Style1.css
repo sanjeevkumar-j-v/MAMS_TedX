@@ -1,0 +1,81 @@
+﻿.example_b {
+    font-family: Poppins, sans-serif;
+color: #fff !important;
+
+text-decoration: none;
+background: #ff4233;
+padding: 6px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+.example_b:hover {
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+background-image:none;
+background-color:dodgerblue;
+}
+.btn-danger:hover
+{
+background-image:none;
+background-color:dodgerblue;
+}
+.example_b1{
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #60a3bc;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+.example_b1:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+background-image:none;
+background-color:dodgerblue;
+}
+
+.navbar-header {
+    -webkit-tap-highlight-color: transparent;
+    color: #000;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 23px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#count{
+
+   
+    background-color:#e62b1e;
+}
+#head{
+    background-color:black !important;
+}
+
+
+#btn{
+    background-color:#000000;
+}
+#drop{
+    color:black;
+}
+.demobtn{
+    background-color:#e62b1e;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+
+}
