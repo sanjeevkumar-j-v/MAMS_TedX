@@ -14,6 +14,8 @@ const passportLocal = require('./config/passport-local-strategy');
 
 var app = express();
 
+const db = require("./config/mongoose");
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

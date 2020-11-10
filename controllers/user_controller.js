@@ -34,27 +34,43 @@ const User = require("../models/user");
 // }
 
 // get the sign up data
-module.exports.create = function(req, res){
-    if (req.body.password != req.body.confirm_password) {
-        return res.redirect('back');
+module.exports.create = function (req, res) {
+  if (req.body.password != req.body.confirm_password) {
+    return res.redirect("back");
+  }
+
+  //   console.log("--->>>> Entered create....");
+  //   User.create(req.body, function (err, user) {
+  //                 if(err){console.log('Error in creating user in signing up :  ',err); return res.redirect('back');}
+
+  //     console.log("User created : ", user);
+  //     // registrationMailer.accCreated(user);
+  //     return res.redirect("/register");
+  //   });
+  //   console.log("--->>>> out from create....");
+
+  User.findOne({ email: req.body.email }, function (err, user) {
+    if (err) {
+      console.log("Error in finding user in signing up");
+      return;
     }
 
-    User.findOne({email: req.body.email}, function(err, user){
-        if(err){console.log('Error in finding user in signing up'); return;}
-
-        if(!user) {
-            User.create(req.body, function(err, user){
-                if(err){console.log('Error in creating user in signing up'); return;}
-                console.log('User created : ',user);
-                // registrationMailer.accCreated(user);
-                return res.redirect('/register');
-            })
-        }else{
-            return res.render('registration_success');
+    if (!user) {
+      User.create(req.body, function (err, user) {
+        if (err) {
+          console.log("Error in creating user in signing up");
+          return;
         }
-
-    });
-}
+        console.log("User created : ", user);
+        // registrationMailer.accCreated(user);
+        //   return res.redirect('/register');
+        return res.render("registration_success");
+      });
+    } else {
+      return res.redirect("/register");
+    }
+  });
+};
 // // get the sign up data
 // module.exports.add = function (req, res) {
 //   console.log(req.params);
